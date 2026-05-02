@@ -4,8 +4,8 @@ from langchain_huggingface import HuggingFaceEmbeddings
 
 def build_db(text):
     splitter = CharacterTextSplitter(
-        chunk_size=600,
-        chunk_overlap=120
+        chunk_size=500,
+        chunk_overlap=100
     )
 
     chunks = splitter.split_text(text)
